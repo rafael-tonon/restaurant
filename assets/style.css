@@ -33,10 +33,10 @@ body header nav {
   height: 70vh;
   -webkit-transform: translate(-100%);
           transform: translate(-100%);
-  -webkit-transition: -webkit-transform .5s ease-out;
-  transition: -webkit-transform .5s ease-out;
-  transition: transform .5s ease-out;
-  transition: transform .5s ease-out, -webkit-transform .5s ease-out;
+  -webkit-transition: -webkit-transform .4s ease-out;
+  transition: -webkit-transform .4s ease-out;
+  transition: transform .4s ease-out;
+  transition: transform .4s ease-out, -webkit-transform .4s ease-out;
 }
 
 body header nav #button-toggle {
@@ -45,6 +45,7 @@ body header nav #button-toggle {
   position: absolute;
   background: #f55;
   font-size: 3rem;
+  cursor: pointer;
   width: 50px;
   height: 50px;
   border: none;
@@ -71,5 +72,7 @@ body header nav #menu-toggle ul li {
 body main {
   background: #cccccc;
   height: 1300px;
+  @extends %center;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
