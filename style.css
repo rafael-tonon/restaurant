@@ -1,9 +1,22 @@
+body nav #menu-toggle, body nav #menu-toggle ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 * {
   padding: 0;
   margin: 0;
-}
-
-body a {
   text-decoration: none;
 }
 
@@ -15,89 +28,39 @@ body header {
 
 body nav {
   position: absolute;
-  top: 15%;
-  max-width: 80vw;
-  width: 100vw;
-  height: 70vh;
-  -webkit-transform: translate(5%);
-          transform: translate(5%);
+  top: 0%;
+  width: 80vw;
+  height: 100vh;
+  -webkit-transform: translate(-100%);
+          transform: translate(-100%);
   -webkit-transition: -webkit-transform .5s ease-out;
   transition: -webkit-transform .5s ease-out;
   transition: transform .5s ease-out;
   transition: transform .5s ease-out, -webkit-transform .5s ease-out;
 }
 
-body nav input {
+body nav #button-toggle {
   top: 15%;
-  left: 0;
-  z-index: 3;
+  left: 100%;
   position: absolute;
-  opacity: 1;
-  cursor: pointer;
   background: #00f;
-  -webkit-transform: scale(3);
-          transform: scale(3);
-  -webkit-transition: -webkit-transform .5s ease-out;
-  transition: -webkit-transform .5s ease-out;
-  transition: transform .5s ease-out;
-  transition: transform .5s ease-out, -webkit-transform .5s ease-out;
+  font-size: 3rem;
+  background: rgba(0, 0, 0, 0);
+  border: none;
 }
 
 body nav #menu-toggle {
   background: #f55;
-  position: relative;
   width: 100%;
   height: 100%;
-  z-index: 1;
-  -webkit-transform: translate(-105%);
-          transform: translate(-105%);
-  -webkit-transition: -webkit-transform .5s ease-out;
-  transition: -webkit-transform .5s ease-out;
-  transition: transform .5s ease-out;
-  transition: transform .5s ease-out, -webkit-transform .5s ease-out;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   font-size: 1.5rem;
 }
 
 body nav #menu-toggle ul {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 body nav #menu-toggle ul li {
   padding: .5em 0;
 }
-
-/* input
-            display: block;
-            width: 100%;
-            height: 30px;
-            cursor: pointer;
-            position: absolute;
-            top: 107px;
-            left: 0px; */
 /*# sourceMappingURL=style.css.map */
