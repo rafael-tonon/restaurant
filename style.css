@@ -1,4 +1,4 @@
-body nav #menu-toggle, body nav #menu-toggle ul {
+body header nav #menu-toggle, body header nav #menu-toggle ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,16 +21,16 @@ body nav #menu-toggle, body nav #menu-toggle ul {
 }
 
 body header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  padding: 1.5em 0;
+  text-align: center;
+  background: #f55;
 }
 
-body nav {
-  position: absolute;
-  top: 0%;
+body header nav {
+  position: fixed;
+  top: 15%;
   width: 80vw;
-  height: 100vh;
+  height: 70vh;
   -webkit-transform: translate(-100%);
           transform: translate(-100%);
   -webkit-transition: -webkit-transform .5s ease-out;
@@ -39,28 +39,37 @@ body nav {
   transition: transform .5s ease-out, -webkit-transform .5s ease-out;
 }
 
-body nav #button-toggle {
+body header nav #button-toggle {
   top: 15%;
   left: 100%;
   position: absolute;
-  background: #00f;
+  background: #f55;
   font-size: 3rem;
-  background: rgba(0, 0, 0, 0);
+  width: 50px;
+  height: 50px;
   border: none;
+  outline: none;
+  border-radius: 0px 10px 10px 0;
+  z-index: 1;
 }
 
-body nav #menu-toggle {
+body header nav #menu-toggle {
   background: #f55;
   width: 100%;
   height: 100%;
   font-size: 1.5rem;
 }
 
-body nav #menu-toggle ul {
+body header nav #menu-toggle ul {
   list-style: none;
 }
 
-body nav #menu-toggle ul li {
+body header nav #menu-toggle ul li {
   padding: .5em 0;
+}
+
+body main {
+  background: #cccccc;
+  height: 1300px;
 }
 /*# sourceMappingURL=style.css.map */
